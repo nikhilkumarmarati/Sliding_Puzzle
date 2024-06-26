@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+}
+
+.header{
+    margin: 1rem auto;
+}
+
+.mainbody{
+    display: flex;
+    flex-direction: row;
+    /* background-color: blue; */
+    width:80%;
+    height:75vh;
+    margin:auto auto;
+    padding:2rem;
+}
+
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(228, 213, 242);
+    padding: 1rem;
+    gap:2rem;
+    width:25%;
+}
+
+.timer{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    margin: 1rem auto;
+
+}
+
+.startbtn {
+    cursor: pointer;
+}
+
+.movecount{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    margin: 1rem auto;
+}
+
+.tablesize{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    margin: 1rem auto;
+}
+
+.difficulty{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    margin: 1rem auto;
+}
+@media (max-width: 900px) {
+    .difficulty {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 0.5rem auto;
+    }
+
+    .tablesize{
+        flex-direction: column;
+        gap:0.5rem;
+        margin: 0.5rem auto;
+    }
+
+    .movecount{
+        flex-direction: column;
+        gap:0.25rem;
+        margin: 0.5rem auto;
+    }
+
+}
+
+.middlebox {
+    display:flex;
+    flex-direction: column;
+    width:50%;
+}
+
+#table { 
+    padding: 10px; 
+    width:100%;
+    height:80%;
+    /* border: 1px solid black; */
+    border-collapse: separate; /* Use separate border model */
+    border-spacing: 10px;
+}
+
+/* #table td {
+  padding: 1px;
+} */
+
+
+.cell {
+    width: 30px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(6, 4, 65);
+    cursor: pointer;
+}
+
+.newgamebtn {
+    display: inline-block;
+    margin:1.5rem auto;
+    padding: 10px;
+    cursor: pointer;
+    background-color: orange;
+}
+
+.completeddiv {
+    display: inline-block;
+    background-color: greenyellow;
+    margin:0.5rem auto;
+    padding: 10px;
+}
+
+.rightbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    background-color: aliceblue;
+
+}
+
+#pausebtn {
+    margin: 1.5rem auto;
+    cursor: pointer;
+    padding:0.2rem;
+    background-color:red;
+    border-radius: 3px;
+}
+
+.besttimesbox {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 1rem auto;
+    padding:0.3rem;
+    border: 1px solid black;
+}
+
+.besttimesheading {
+    margin: auto auto;
+}
+
+.bestlabel {
+    margin: 10px;
+}
+
+.besttime {
+    margin-top:10px;
+}
+
+.bestbox {
+    display: flex;
+    margin:0.2rem;
+
+}

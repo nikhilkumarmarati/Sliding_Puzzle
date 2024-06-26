@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15-puzzlegame</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+
+
+    <link rel="stylesheet" href="index.css">
+    <script src="javascript.js"></script>
+
+</head>
+<body>
+    
+    <div class = "container">
+        
+        <div class="header">
+            <h1>Puzzle Game</h1>
+        </div>
+
+        <div class="mainbody">
+
+            <div class="leftbox">
+      
+                <div class="timer">
+                    <div>Time:</div>
+                    <div id="timer">00:00</div>
+                </div>
+              
+                <!-- <div class="startbtn">Start Game</div> -->
+      
+                <div class="movecount">
+                    <p>Move count:</p>
+                    <span id="count">00</span>
+                </div>
+                
+                <div class="tablesize">
+                    <div >Table Size:</div>
+                    <div>
+                        <select id="tablesize" class="tableoption">
+                            <option value="3x3">3x3</option>
+                            <option value="4x4">4x4</option>
+                            <option value="5x5">5x5</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="difficulty">
+                    <div >Difficulty:</div>
+                    <div>
+                        <select id="difficultyLevel" class="tableoption">
+                            <option value="1">Easy</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Hard</option>
+                        </select>
+                    </div>
+                </div>
+                    
+            </div>
+
+            <div id="middleBox" class="middlebox">
+                <table id ="table">
+                    <!--i think now also javascript code only like suffle and drwar board as in codebuffy(assign2 pdf)-->
+                </table>
+
+                <div id="newGameBtn" class="newgamebtn">
+                    New Game
+                </div>
+            </div>
+
+            <div class="rightbox">
+                <div id="pausebtn">Pause</div>
+
+                <div class="besttimesbox">
+                    <div class="besttimesheading">BestTimes</div>
+                    <div class="bestbox">
+                        <div class="best1label bestlabel">1.</div>
+                        <div id="best1time" class="besttime"></div>
+                    </div>
+                    <div class="bestbox">
+                        <div class="best2label bestlabel">2.</div>
+                        <div id="best2time" class="besttime"></div>
+                    </div>
+                    <div class="bestbox">
+                        <div class="best3label bestlabel">3.</div>
+                        <div id="best3time" class="besttime"></div>
+                    </div>
+                    <div class="bestbox">
+                        <div class="best4label bestlabel">4.</div>
+                        <div id="best4time" class="besttime"></div>
+                    </div>
+                    <div class="bestbox">
+                        <div class="best5label bestlabel">5.</div>
+                        <div id="best5time" class="besttime"></div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+
+</body>
+</html>
